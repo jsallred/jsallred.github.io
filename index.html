@@ -456,12 +456,7 @@
 
         </div>
 
-        <script>
-          function toggleReveal() {
-            const reveal = document.getElementById('card-reveal');
-            reveal.style.display = reveal.style.display === 'none' || reveal.style.display === '' ? 'block' : 'none';
-          }
-        </script>
+
 
       </div>
     </section>
@@ -800,6 +795,13 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+  <script>
+    function toggleReveal() {
+      const reveal = document.getElementById('card-reveal');
+      reveal.style.display = reveal.style.display === 'none' || reveal.style.display === '' ? 'block' : 'none';
+    }
   </script>
 </body>
 
