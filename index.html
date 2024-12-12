@@ -438,20 +438,30 @@
                 <b>Tools:</b> Java, JavaFX
               </li>
             </ul>
+            <button class="btn reveal-btn teal" onclick="toggleReveal()">View Gameplay Frames</button>
           </div>
-          <div class="card-reveal">
-            <!-- TODO: change this -- only close button -->
-            <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-            <span class="card-title teal-text"><small>Gameplay Frames</small><i
-                    class="mdi-navigation-close right"></i></span>
+          <div class="card-reveal" id="card-reveal" style="display: none;">
+            <span class="card-title teal-text">
+              <small>Gameplay Frames</small>
+              <i class="mdi-navigation-close right" onclick="toggleReveal()" style="cursor: pointer;">&#10005;</i>
+            </span>
             <ul>
               <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
               <li>Users can view posts and contact the admin via Contact Page.</li>
               <li>Admin can Add, Delete, Update posts.</li>
             </ul>
+            <img src="" alt="Gameplay Frame 1" class="responsive-img" />
+            <img src="" alt="Gameplay Frame 2" class="responsive-img" />
           </div>
 
         </div>
+
+        <script>
+          function toggleReveal() {
+            const reveal = document.getElementById('card-reveal');
+            reveal.style.display = reveal.style.display === 'none' || reveal.style.display === '' ? 'block' : 'none';
+          }
+        </script>
 
       </div>
     </section>
